@@ -38,7 +38,7 @@ xTs42HOi+jOYfzU2MUYOlxo=
 
 // Your Google Sheet ID — extract from the sheet URL
 // e.g., https://docs.google.com/spreadsheets/d/SHEET_ID/edit
-export const SPREADSHEET_ID = "YOUR_SPREADSHEET_ID_HERE";
+export const SPREADSHEET_ID = "17jLtMC6HiQwzez0b6ai98fW4ebvtOAcUpJHTxRBvi_I";
 
 // Sheet name (tab name)
 export const SHEET_NAME = "Sheet1";
