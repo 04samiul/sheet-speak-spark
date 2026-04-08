@@ -1,44 +1,17 @@
 // ⚠️ WARNING: These credentials are exposed in the browser.
 // For production, move API calls to a backend server.
 
-export const GEMINI_API_KEY = "AIzaSyB8XKZJ9Szs_0Xmall9ak6CJJQ5_5_zy3w";
+export const GEMINI_API_KEY = "AIzaSyCmqfLutGyaUsXW8YDWoHEosWX8X_TYdMM";
 
 export const GOOGLE_SERVICE_ACCOUNT = {
-  client_email: "ca-vocab-bot@ca-vocab.iam.gserviceaccount.com",
-  private_key: `-----BEGIN PRIVATE KEY-----
-MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC4aXbzNNKVjNHl
-BwGmRpTYKZICGhMj7oqpue5jCj6TGovvm9PlYstgmJP1kNkS0mFmkEiP71Lzzx7Z
-IzGAegCRKPZWiQAqiZlY2cN2k++H5vc92vOSiUgyxjYyny357JEvhRXBBln9VGXX
-oLXPTqjsR099Q2yx1cjtw8i/p05gyBVu+yr5+2l6TnFmBkFvKYlyHZkF2YQdy8rf
-lowUmhCXRP9uO296ffV7HDuwCk5QqPoyrCFNRl1S/Aa3u67nLygXyh2vzX0srtY7
-ESQbzVMbBisFwWzevL/H5sefxvMVvSZOQC/glrJtv+t9ox9kjjNs1EH/b4vnmy+I
-PGrrkle1AgMBAAECggEAHKq6ZL64oKpaI5f1++7bawn1SlHa2VpW4GEIq4k3Zn85
-Myd+Zll4A51cXM9mSzx8iyjROtzJgKCZK0iDBLWSen5LYvLbnYEz3yHE9p0zHmV7
-WDh95jDkkg4JdU+U4lXR0PkHg3DVEuIojb9MG/yemlJQi0issC1rVXi6r35W2wjj
-zn9R5EW/QUnNgR92PQxjmSH/QzQNtOtXe82tOUuJLLBVSlRtxTaABMGWm220zyWR
-rzY3Kr/J6s0XJEqMwtz/S+jI/g3HWDCtWvSsiaxI8cbSoYNC5XOZFXo7orMoELHO
-Ly1bW8Blm5nXMZ+cvMHHsY1lBaP7pNzvoLQ7ie7MCQKBgQDmefMUsO6mxkwPwrqY
-tfby0rNf/GdrxEmUxSkPYLQZXlO4Aho5flsJo4HdZMZIBKAddV4OveqTODl7l8Za
-/HyiCZ8CXrj+qX+pJz04jOO/VForZ/0zW5zZU3MRX7MDRSNqpgrCXFRKLL6Xd52i
-4An1XqKsWfji+MxSPWlhybeF6QKBgQDM1ZSYIhKO5oP8QovlhVk+lESnB9eT4w2R
-j101qnzPqJ/qEr/a+SVIpZbA2LEoISs/iVx2IaZdp7kHD2gUrXJ2Jsq/rZufrRqY
-TXCWpcb6oW5xZqaE5Dn548F5gSiuA5n7KBD6ehhLvvsDfQ1pXFRv7TXvp5yiUL/j
-Y33ALLIH7QKBgQDmLIZqdKVy43lVCCnol1nweiLwSphS1S6TKDBwjihvaXf8vgTI
-xHtQ7f2lSJ6JkC0EHpH38Q2TR8SIvTQ47A3gmfE2objphAfdvDV1A6f0Dd8bmHgT
-0Xucw62YfVW/f032lasLHsCDb5pMlQZWgp8PcRrPO+/HZahQvcpAAf+J+QKBgHzR
-qbsLCEQMNGGEK7uxhrCbqTofjT6RHbOVqTcKrQPdvZTl2AOXzyB1x2e8pDfP/oq5
-KZ7S4o4vppCm0sXG6/kTqnkjUbH7yjkE95bVbmtL9AEmjFJuwOWF5GAmVKO1jh9+
-StpXjHab6lo12fZaTRnncvaXLNu8WTI3bmms0tABAoGAGBI+ZkEAtsXxZHuWQ/6I
-SscM0lYR+v/O06p2Z06q7x9u1gllrx1zAvbYurHYpLI7n6B+wOmjHJ0Y3ySzMD0k
-Rdorj0IARyYadzN48MVPAaYelfxvjq7YqB+go/S+lj/pHAI5EJ6wxdPfq3MEp8qh
-xTs42HOi+jOYfzU2MUYOlxo=
------END PRIVATE KEY-----`,
+  client_email: "cavocabbot@cavocab.iam.gserviceaccount.com",
+  private_key: `-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDAWs8KO8R5n8Me\niQLRkDak/5+oM1AplimOOcaQgGWqQx7usCuny4qCUHmmedBKJkE8QBMM8CPoChQ0\nrri52xmu30W1Hp8AUo1zksg2eLhgSNVxhAW14Doj/sKaG/6vmhhdU9jw54gFJeU5\nYg4HGHHTczEG20ha538RfkNY+OWQFCXHPQ1vYd6oTeng77r/4L0Ae5rxXNlX7k4k\nt3pdXPwBmKAMtlFC1DGzzsvhzaluhN++4+eG63TakLSawzAH7QcnT+e0q8ZGtLoF\nS4SZIroE600S3jW41/OxrRVz+eviIhH3ML2YJBfU27atUNcQYzjXNsjfGe5Iuxau\n2F2Sac3HAgMBAAECgf8wS7fQyZ3Mftik4mUfB+ANFam0StbK1ipywc2Au+03sfnA\njNI9oMIQWCRTzkzaceaSnCdHlZxTGMJcCvTZU0pg5J3zF7euNutNGVyIOu1h1/gA\nzzV5tj/HmNhevgVEqlZCtnkDHrziC0qYPnjEdW8ZdynNN8Q/OlhmXbTiUD9TREYn\nKvybdPU3ZTDG/vO9pXjUV8p1WqBYx3fjGEsOeTdiAP2GHVMOyJFFSGac0pMT2n4O\nzZdtIO84sGYJnfK2ZwM/xHVjGFcuIlI0vfAvyNp1bQagyHEkHkhlO19YqaUPQ/bj\npYiquGPRTlR3VTczod/oiW/4kyLu4hht9shZQaECgYEA+I/bi2AtQyJPDi1qi/Ck\njYWV13UzaEq0dKI2J2e+kH8i8vPWtC4cAKAdwW0Bsb+pqM38fOMXnHKAVHAPhmpY\nc6JmfsEa6rW8anszu6KD+vwllf7ncmiSpiGNr3jmM/Jse/6dxNGOOn40xkJFlHmG\nRXAXbRVo/akvOugex/l1tRcCgYEAxhxePWIYFleXjKERJohRXtGlWRR0xuYSKj2S\nURXRMbIjhHA/IGt8wZj9ru4EgbLp+jJVMiMJEOPCO7c5RShCimZDouQ55b2EbFo3\nwC42RZCZq1anKtRaPYjnSu79INlbPeckOeDxwD+2XgwfQU7C+HPN/KK/QbsCNiKE\nHaGcetECgYAIL0R9bGdRJJoRz3EItp3UgyeR9qwArSUQCh9aYNInk+gks97IBBSr\n+JnCOsKphbQieNXtjtTCNAsBvMbmGC5dcGWLmvQ18lIH95KWhR1vcEoUjFY2sDbT\n/ZrawlJiN4NW+eVcC8JxLqKyPJBp+S5wruY2k1PntmB1whrxXsd/dQKBgHjwiHdg\nkuPQxSuMiDPFtCb2RMKEwmVJvn0a6V+mufZkkVogS+k2tQpao0NO+mFTH5Mldu0M\nhlRRNhnOWJ/nW/exRkkCmnWtpFGhIbeofmkpRSZb1+FFkXFPSiNskgqjphe8K1lK\nAUsjmej/7XSo6E1UJMO9dpRh3Y++sniEWEqBAoGBAI/DcdKHEf+4yqt8g8SigJl7\nME5/21IXu+9wmyI6Bo59OI4/w4S2oR60EEDfoaenU2AgLqOvOvtbaijXOznHV512\n3OL8afOFzYbm405t2AKsG2QgcwklINhpcY3hX29+bBWjfQk6HF7CPgsuXG004itt\n1IIatZ+uhJHlod4vFv3k\n-----END PRIVATE KEY-----\n`,
   token_uri: "https://oauth2.googleapis.com/token",
 };
 
 // Your Google Sheet ID — extract from the sheet URL
 // e.g., https://docs.google.com/spreadsheets/d/SHEET_ID/edit
-export const SPREADSHEET_ID = "17jLtMC6HiQwzez0b6ai98fW4ebvtOAcUpJHTxRBvi_I";
+export const SPREADSHEET_ID = "14Ykx-AOnt09_zARLixFsAtJJtrKla8-Mr2sJA7Z5yUA";
 
 // Sheet name (tab name)
 export const SHEET_NAME = "Sheet1";
