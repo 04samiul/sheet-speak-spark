@@ -1,7 +1,7 @@
 // ⚠️ WARNING: These credentials are exposed in the browser.
 // For production, move API calls to a backend server.
 
-export const GEMINI_API_KEY = "AIzaSyAdwYpe6OZp8DFGcTlpMXO6e8EYd3aoyEM";
+export const GEMINI_API_KEY = "AIzaSyB8XKZJ9Szs_0Xmall9ak6CJJQ5_5_zy3w";
 
 export const GOOGLE_SERVICE_ACCOUNT = {
   client_email: "ca-vocab-bot@ca-vocab.iam.gserviceaccount.com",
