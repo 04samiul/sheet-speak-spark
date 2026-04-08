@@ -9,6 +9,45 @@ export interface VocabData {
   antonym: string;
 }
 
+function getGeminiErrorMessage(status: number, responseText: string): string {
+  let parsed:
+    | {
+        error?: {
+          message?: string;
+          details?: Array<{ retryDelay?: string }>;
+        };
+      }
+    | null = null;
+
+  try {
+    parsed = JSON.parse(responseText) as {
+      error?: {
+        message?: string;
+        details?: Array<{ retryDelay?: string }>;
+      };
+    };
+  } catch {
+    parsed = null;
+  }
+
+  const retryDelay = parsed?.error?.details?.find((detail) => detail.retryDelay)?.retryDelay;
+  const apiMessage = parsed?.error?.message?.trim() || responseText.trim() || "Unknown Gemini error";
+
+  if (status === 429) {
+    return `Gemini quota is exhausted or not enabled for this API key.${retryDelay ? ` Retry after ${retryDelay}.` : ""} Enable Gemini API usage for this Google project, then try again.`;
+  }
+
+  if (status === 403) {
+    return "This Gemini API key does not have permission to use the model. Make sure Gemini API access is enabled for the same Google project.";
+  }
+
+  if (status === 400 && /api key/i.test(apiMessage)) {
+    return "The Gemini API key is invalid. Double-check the key in src/lib/config.ts.";
+  }
+
+  return `Gemini API error (${status}): ${apiMessage}`;
+}
+
 /**
  * Calls Google Gemini API to generate vocabulary details for a word.
  * Checks UK English spelling and generates Bengali meaning, sentence, synonym, antonym.
@@ -47,7 +86,7 @@ Respond ONLY in this exact JSON format (no markdown, no code blocks):
 
   if (!response.ok) {
     const errorText = await response.text();
-    throw new Error(`Gemini API error (${response.status}): ${errorText}`);
+    throw new Error(getGeminiErrorMessage(response.status, errorText));
   }
 
   const data = await response.json();
